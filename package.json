@@ -1,0 +1,38 @@
+{
+  "name": "amahr-enterprise-hrms-pern",
+  "version": "2.0.0",
+  "description": "Enterprise HR Management System built on the PERN Stack (PostgreSQL, Express.js, React/Universal Components, Node.js)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "client": "npm --prefix client run dev",
+    "client:build": "npm --prefix client run build",
+    "build": "npm --prefix client run build",
+    "db:init": "node server/initDb.js",
+    "db:seed": "node server/initDb.js --seed"
+  },
+  "keywords": [
+    "pern",
+    "postgresql",
+    "express",
+    "react",
+    "nodejs",
+    "hrms",
+    "workload-health"
+  ],
+  "author": "AmaHR Engineering Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
